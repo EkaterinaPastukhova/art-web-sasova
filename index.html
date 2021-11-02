@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasova Art</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/slick.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="mobile-menu-btn close">
+                <span class="material-icons-round">close</span>
+            </button>
+            <a href="./index.html" class="nav-link active">главная</a>
+            <a href="./gallery-painting.html" class="nav-link">галерея</a>
+            <a href="./about-me.html" class="nav-link">обо мне</a>
+            <a href="./contacts.html" class="nav-link">контакты</a>
+        </nav>
+        <h1 class="headline">
+            <span class="title-content">
+                анастасия сасова
+            </span>
+        </h1>
+        <button class="mobile-menu-btn menu">
+            <span class="material-icons-round">menu</span>
+        </button>
+    </header>
+    <div class="container">
+        <div class="homepage-slider">
+            <img src="./img/painting/ostorozhnoskolzkij-pol-holst-akril-80h802021-lg.jpg">
+            <img src="./img/painting/sad-zemnyh-naslazhdenij-holstaakril-80h80-2021-lg.jpg">
+            <img src="./img/painting/rabotaem-navynos-holst-akril80h802020-lg.jpg">
+            <img src="./img/painting/anastasiya-sasovane-bespokoit-holst-akril-80h80-2020g-lg.jpg">
+        </div>
+        <footer class="footer">
+            <nav class="social-list-wrapper">
+                <a href="https://www.facebook.com/nastya.sasovazvonova" target="_blank" class="social-icon facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/sasova_art/" target="_blank" class="social-icon instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://vk.com/id133370637" target="_blank" class="social-icon vk">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </nav>
+            <div class="footer-text-wrapper">
+                <span class="footer-text-content">
+                    2021 © Anastasia Sasova
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="JS/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.homepage-slider').slick({
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
